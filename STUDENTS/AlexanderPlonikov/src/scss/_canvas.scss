@@ -1,0 +1,252 @@
+.canvas {
+  flex: 1 0 auto;
+  margin: 52px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0 20px;
+  z-index: 50;
+  &::before {
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(./../img/fon4.jpg) center;
+    background-size: cover;
+    opacity: 0.4;
+    left: 0;
+    top: 0;
+    z-index: -200;
+  }
+}
+
+.lessonConvasON {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgb(255, 255, 255);
+  flex-direction: column;
+}
+.tools {
+  display: flex;
+  width: 1200px;
+  align-items: center;
+  padding: 20px 0;
+  border: 1px solid rgb(207, 205, 205);
+  //border-radius: 5px;
+  position: relative;
+  background-color: rgb(241, 194, 132);
+}
+
+.tools__tool {
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+  background-color: rgb(240, 27, 27);
+  margin: 0 5px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid rgb(223, 217, 217);
+  outline: none;
+  &:hover {
+    background-color: rgb(243, 22, 22);
+  }
+}
+
+.tools__tool:first-child {
+  margin-left: 20px;
+  background: url(./../img/brush.png) center;
+  background-size: cover;
+  background-color: rgb(255, 255, 255);
+  &:hover {
+    background-color: rgb(243, 22, 22);
+  }
+  &:active {
+    transform: scale(0.8);
+  }
+}
+.tools__tool:nth-child(2) {
+  background: url(./../img/line.png) center;
+  background-size: cover;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  &:hover {
+    background-color: rgb(243, 22, 22);
+    &::before {
+      position: absolute;
+      content: "зажмите Ctrl, и кликайте по холсту";
+      display: flex;
+      width: 250px;
+      padding: 5px;
+      border-radius: 3px;
+      background-color: rgb(32, 190, 218);
+      font-size: 15px;
+      top: -30px;
+      z-index: 200;
+    }
+  }
+  &:active {
+    transform: scale(0.8);
+  }
+}
+.tools__tool:nth-child(3) {
+  background: url(./../img/text.png) center;
+  background-size: cover;
+  background-color: rgb(255, 255, 255);
+  &:hover {
+    background-color: rgb(243, 22, 22);
+  }
+  &:active {
+    transform: scale(0.8);
+  }
+}
+.textt {
+  display: none;
+}
+.texttON {
+  position: absolute;
+  display: flex;
+  width: 400px;
+  height: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+  top: 74px;
+  left: 10px;
+  border: 1px solid black;
+  background-color: rgb(105, 218, 238);
+  &:focus {
+    background-color: burlywood;
+  }
+}
+
+.tools__tool:nth-child(4) {
+  background: url(./../img/brush.png) center;
+  background-size: cover;
+  background-color: rgb(255, 255, 255);
+  &:hover {
+    background-color: rgb(243, 22, 22);
+  }
+  &:active {
+    transform: scale(0.8);
+  }
+}
+.tools__tool:nth-child(5) {
+  background: url(./../img/lastik.png) center;
+  background-size: cover;
+  background-color: rgb(255, 255, 255);
+  &:hover {
+    background-color: rgb(243, 22, 22);
+  }
+  &:active {
+    transform: scale(0.8);
+  }
+}
+.tools__tool:nth-child(6) {
+  background: url(./../img/clean.png) center;
+  background-size: cover;
+  background-color: rgb(255, 255, 255);
+  &:hover {
+    background-color: rgb(243, 22, 22);
+  }
+  &:active {
+    transform: scale(0.8);
+  }
+}
+.contForRange {
+  display: flex;
+  margin: 0 20px;
+  align-items: center;
+  height: 30px;
+  background-color: rgb(248, 250, 231);
+  border-radius: 3px;
+  border: 1px solid rgb(199, 196, 196);
+  padding: 10px;
+}
+
+.nameTools {
+  display: flex;
+  margin: 0 10px;
+}
+
+.minAndMax {
+  width: 75px;
+  justify-content: center;
+  display: flex;
+  margin: 0 10px;
+  background-color: rgb(209, 205, 205);
+  border-radius: 3px;
+  padding: 3px;
+}
+
+.contForColors {
+  display: flex;
+  margin: 0 20px;
+  align-items: center;
+  height: 30px;
+  background-color: rgb(248, 250, 231);
+  border-radius: 3px;
+  border: 1px solid rgb(199, 196, 196);
+  padding: 10px;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px 0 0;
+}
+
+.tools__save {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 15px;
+  width: 60px;
+  height: 40px;
+  flex: 0 0 auto;
+  color: black;
+  margin-right: 10px;
+  outline: none;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid rgb(223, 217, 217);
+  &:hover {
+    background-color: rgb(243, 22, 22);
+  }
+  &:active {
+    transform: scale(0.8);
+  }
+}
+
+.canv {
+  background-color: #fff;
+  border: 1px solid blacK;
+}
+
+.contCoord {
+  display: flex;
+  // margin: 0 20px;
+  align-items: center;
+  height: 30px;
+  background-color: rgb(248, 250, 231);
+  //border-radius: 3px;
+  border: 1px solid rgb(199, 196, 196);
+  padding: 5px 10px;
+}
+
+.ord {
+  width: 50px;
+  height: 20px;
+  margin: 0 10px;
+  border-radius: 3px;
+  border: 1px solid rgb(199, 196, 196);
+}

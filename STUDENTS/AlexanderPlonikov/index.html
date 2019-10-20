@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./build/css/all.css">
+</head>
+
+<body>
+  <div class="contener">
+    <header class="header">
+      <h1 class="header__h1">The Js lesson 7</h1>
+      <div class="header__ul">
+      </div>
+    </header>
+    <section class='dinamikPage'>
+      <section class='lessonConvas'>
+        <div class="tools">
+          <button class="tools__tool" data-tools="pencil">Корандаш</button>
+          <button class="tools__tool" data-tools="line">Линия</button>
+          <button class="tools__tool" data-tools="text">Текст</button>
+          <input type="text" class="textt" id='text' pattern="Введите текс!">
+          <button class="tools__tool" data-tools="lastik">Круг</button>
+          <button class="tools__tool" data-tools="clean">Квадрат</button> 
+          <div class="contForRange">
+            <span class="nameTools">Размер инcтрумента</span>
+            <input type="range" min="1" max="200" step="1" class="range">
+            <span class='minAndMax'>20 px</span>
+          </div>
+          <div class="contForColors">
+            <span class="nameTools">Цвет</span>
+            <input type="color" class="color">
+          </div>
+          <a  href="#" class="tools__save"  data-tools="save" download>Save</a>
+        </div>
+        <canvas width="1200px" height="600px" class='canv'></canvas>
+        <div class="contCoord">
+          <span class="ord" id="x">0 </span>
+          <span class="ord" id="y">0 </span>
+        </div>
+      </section>
+    </section>
+
+
+    <footer class='footer'></footer>
+  </div>
+
+  <script src="./build/js/main.js"></script>
+  <script src="./build/js/Canvas.js"></script>
+  <script src="./build/js/jQuery.js"></script>
+</body>
+
+</html>
