@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div id="paint">
+    <div id="rollMenu">
+        <button id="fileBtn">File</button>
+        <button id="homeBtn">Home</button>
+        <button id="viewBtn">View</button>
+    </div>
+    <div id="menu">
+        <div id="fileMenu"></div>
+        <div id="homeMenu">
+            <div id="toolsSubMenu">
+                <button class="toolBtns" data-name="pencilBtn">Pencil</button>
+                <button class="toolBtns" data-name="lineBtn">Line</button>
+                <button class="toolBtns" data-name="brushBtn">Brush</button>
+                <button class="toolBtns" data-name="textBtn">Text</button>
+            </div>
+            <div id="sizeSubMenu">
+                <select name="" id="sizeSelect">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                </select>
+            </div>
+            <div id="colorSubMnu">
+                <input class="colorBtns" type="color" id="colorSelect">
+            </div>
+        </div>
+        <div id="viewMenu"></div>
+    </div>
+    <div id="myCanvas"></div>
+    <div id="status"></div>
+</div>
+
+
+<script src="dist/app.js"></script>
+</body>
+</html>
