@@ -40,6 +40,9 @@ function startDrow (evt) {
     if (system.currentTool === 'pencil') {
         pencil(evt);
     }
+    if (system.currentTool === 'brush') {
+        brush(evt);
+    }
 }
 
 function endDrow () {
@@ -54,6 +57,17 @@ function pencil (evt) {
         let y = +doc.querySelector ('#y-coord').innerText;
         ctx.fillStyle = system.currentColor;
         ctx.fillRect (x, y, system.brushSize, system.brushSize);
+    }
+}
+
+function brush (evt) {
+    canvas.onmousemove = function (evt) {
+        let x = +doc.querySelector ('#x-coord').innerText;
+        let y = +doc.querySelector ('#y-coord').innerText;
+        ctx.fillStyle = system.currentColor;
+        ctx.beginPath();
+        ctx.arc (x, y, system.brushSize, 0, Math.PI*2, false);
+        ctx.fill();
     }
 }
 
