@@ -43,6 +43,9 @@ function startDrow (evt) {
     if (system.currentTool === 'brush') {
         brush(evt);
     }
+    if (system.currentTool === 'fill') {
+        fill(evt);
+    }
 }
 
 function endDrow () {
@@ -67,6 +70,15 @@ function brush (evt) {
         ctx.fillStyle = system.currentColor;
         ctx.beginPath();
         ctx.arc (x, y, system.brushSize, 0, Math.PI*2, false);
+        ctx.fill();
+    }
+}
+
+function fill (evt) {
+    canvas.onmousemove = function (evt) {
+        ctx.beginPath();
+        ctx.rect(0, 0, 1000, 800);
+        ctx.fillStyle = system.currentColor;
         ctx.fill();
     }
 }
