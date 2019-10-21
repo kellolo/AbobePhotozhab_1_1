@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <div class="header"></div>
+    <div class="header"><h3>Canvas</h3></div>
     <div class="canv">
         <canvas id="canv" width="1000" height="800"></canvas>
     </div>
@@ -18,16 +18,18 @@
             <p id="x"><b>x: </b> <span id="x-coord"></span></p>
             <p id="y"><b>y: </b> <span id="y-coord"></span></p>
         </div>
-        <button class="tool-button" data-name="brush">Brush</button>
-        <button class="tool-button" data-name="notbrush">NotBbrush</button>
-        <button class="tool-button" data-name="notbrush2">NotBrush 2</button>
-        <select id="siliect-size">
-            <option value="5">5</option>
-            <option value="10">10</option>
-            <option value="15">15</option>
-            <option value="20">20</option>
-        </select>
+        <div class="tools-wrp">
+            <button class="tool-button" data-name="pencil">Pencil</button>
+            <button class="tool-button" data-name="notbrush">NotBbrush</button>
+            <button class="tool-button" data-name="notbrush2">NotBrush 2</button>
+            <select id="siliect-size">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+            </select>
         <input type="color" id="select-color">
+        </div>
     </div>
     <script src="script/main.js"></script>
 </body>
