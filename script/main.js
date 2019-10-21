@@ -36,7 +36,7 @@ function handleInput (evt) {
     }
 }
 
-function startDrow () {
+function startDrow (evt) {
     if (system.currentTool === 'pencil') {
         pencil(evt);
     }
@@ -48,8 +48,8 @@ function endDrow () {
 
 // add Tool
 
-function pencil () {
-    canvas.onmousemove = function () {
+function pencil (evt) {
+    canvas.onmousemove = function (evt) {
         let x = +doc.querySelector ('#x-coord').innerText;
         let y = +doc.querySelector ('#y-coord').innerText;
         ctx.fillStyle = system.currentColor;
