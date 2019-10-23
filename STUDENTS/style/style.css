@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+button {
+    border: 0;
+    background-color: #f0f0f0;
+}
+#paint {
+    height: 100vh;
+}
+#rollMenu,
+#menu {
+    background-color: #f0f0f0;
+    font-size: 0;
+}
+#rollMenu button {
+    padding: 5px 15px;
+}
+#menu > div {
+    display: flex;
+    background-color: #f0f0f0;
+}
+#myCanvas {
+    background-color: #ccc;
+    height: 88.5vh;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#canvas {
+    background-color:#fff;
+    cursor: crosshair;
+    box-shadow: 10px 10px 3px #aaa;
+}
+#status {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 18px;
+    background-color: #f0f0f0;
+    border-top: #aaaaaa solid 1px;
+}
+.coordEl {
+    display: flex;
+    border-right: gray solid 1px;
+    width: 120px;
+}
+.coordEl p {
+    display: inline-block;
+    margin: 0;
+    width: 60px;
+}
