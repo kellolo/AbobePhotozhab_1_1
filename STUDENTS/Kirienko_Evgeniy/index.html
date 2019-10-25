@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>paint</title>
+	<link rel="stylesheet" href="css/style.css">
+
+
+	</style>
+</head>
+
+<body>
+	<div class="head"></div>
+
+
+	<div class="container">
+		<div id="roulette">
+
+		</div>
+		<div class="coordinates">
+			<span id="x"><b>x: </b></span> <span id="x-coord"></span>
+
+			<span id="y"><b>y: </b> </span><span id="y-coord"></span>
+			<p id="tool"><b>carrent tool:</b><span id="car-tool"></span></p>
+
+
+		</div>
+		<div class="tools">
+			
+
+			<button class="tool-button" data-name='pencil'>Pencil</button>
+			<button class="tool-button" data-name='notebrush'>Brush</button>
+			<button class="tool-button" data-name='erase'>Erase</button>
+			<!--button class="save" data-name='save'></button-->
+
+
+			<a id="download" download="image.png"><button type="button" onClick="download()">Save</button></a>
+			<select id='select-size'>
+
+				<option>1</option>
+				<option>5</option>
+				<option>10</option>
+				<option>15</option>
+				<option>20</option>
+			</select>
+			
+
+			<input type="color" id="select-color">
+		</div>
+		<div class="canv">
+			<canvas id="canv" width="800" height="600"></canvas>
+
+		</div>
+		<!--svg id="cursor" height="20" width="20" viewBox="0 0 36 36"><polygon stroke="#eee" stroke-width="2px"  fill="#fff"/><circle cx="60" cy="60" r="50"/></svg-->
+	</div>
+	<footer>
+
+
+
+	</footer>
+	<script src="script/main.js"> </script>
+	<script src="script/gallery.js"> </script>
+</body>
+
+</html>

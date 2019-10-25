@@ -1,0 +1,121 @@
+* {
+    margin: 0 auto;
+    outline: none;
+}
+
+
+
+
+
+
+.container {
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: lightblue;
+    /* background-image: url(../img/paradise-1110498_1280.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: 100% 100%; */
+    padding: 0px;
+}
+
+
+
+
+.tool-button {
+
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+#download >button {
+
+
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+
+
+
+#select-size {
+
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+#select-color {
+    margin-left: 15px;
+    margin-block: 0;
+    border-radius: 10%;
+    width: 35px;
+    height: 35px;
+}
+
+
+
+.canv {
+    margin: 0 auto;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    -webkit-filter: drop-shadow(20px 20px 50px rgba(255, 255, 255, 0.95));
+}
+
+#canv {
+
+    width: 800px;
+    height: 600px;
+    border: 1px solid lightgray;
+
+    /*  cursor: none;
+*/
+    border-radius: 5%;
+    background-image: url(../img/0.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: crosshair;
+    /*cursor: url(../img/cursor1.png) ;*/
+
+}
+
+
+
+#cursor {
+    position: absolute;
+    /*   display: none;*/
+    /* cursor: none;
+*/
+    -webkit-filter: drop-shadow(1px 1px 10px rgba(255, 255, 255, 0.99));
+}
+
+
+
+#roulette {
+    max-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    content-align: center;
+}
+
+
+#roulette>img {
+
+    width: 120px;
+    margin: 2px 15px;
+    text-align: center;
+    border-radius: 15%;
+    /* object-fit: cover;*/
+}
+
+#roulette img:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
