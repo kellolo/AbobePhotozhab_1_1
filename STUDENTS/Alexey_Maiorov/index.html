@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="coordinates">
+            <p class = "coord" id="x"><b>x: </b> <span id="x-coord">0</span></p>
+            <p class = "coord" id="y"><b>y: </b> <span id="y-coord">0</span></p>
+            <br>
+        </div>
+        <button class="tool-button brush" data-name='brush'></button>
+        <button class="tool-button spray" data-name='spray'></button>
+        <button class="tool-button text" data-name='text'></button>
+        <button class="tool-button clear"></button>
+        <button class="tool-button save"></button>
+        <form class="form" action="">
+            <label for="select-size">Brush width:</label>
+            <select id='select-size'>
+                <option>5</option>
+                <option>10</option>
+                <option>15</option>
+                <option>20</option>
+            </select>
+            <label for="color">Color:</label>
+            <input type="color" id="select-color">
+        </form>
+    </nav>
+    <div class="canv">
+        <canvas height='600' width='800' id='canv'></canvas>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
